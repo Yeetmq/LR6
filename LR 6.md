@@ -15,7 +15,7 @@
 Зарегистрирован аккаунт на сайте GitHub.
 
 ### Шаг 2: Форк репозитория
-Форкнут репозиторий с заданием: https://github.com/Yeetmq/LR6/tree/feature
+Форкнут репозиторий с заданием: https://github.com/Yeetmq/LR6/tree/master
 
 ![[Pasted image 20241114223618.png]]
 ### Шаг 3: Установка Git
@@ -111,3 +111,57 @@ git branch report
 git checkout report
 ```
 ![[Pasted image 20241114224521.png]]
+
+### Лог команд
+```# Настройка имени пользователя и email
+git config --global user.name "4314 Паюнен Д.А."
+git config --global user.email "denispajunen@mail.ru"
+
+# Клонирование форкнутого репозитория
+git clone https://github.com/Yeetmq/LR6/tree/master
+
+# Переключение в директорию проекта
+cd LR6
+
+# Получение истории операций для всех веток
+git log --oneline --all
+
+# Просмотр последних изменений
+git log -p -1
+
+# Создание новой ветки
+git branch feature
+
+# Переключение на новую ветку
+git checkout feature
+
+# Внесение изменений, добавление их в индекс и коммит
+git add example.txt
+git commit -m ""Изменения в новой ветке"
+
+# Переключение обратно на мастер и слияние веток
+git checkout master
+git merge feature
+
+# Удаление побочной ветки после слияния
+git branch -d feature
+
+# Создание еще нескольких коммитов с комментариями
+git add example.txt
+git commit -m "Добавлена новая строка"
+git add example.txt
+git commit -m "Добавлена новая строка (второй коммит)"
+
+# Откат последнего коммита
+git revert HEAD
+
+# Создание ветки для отчета и переключение на нее
+git branch report
+git checkout report
+
+# Получение истории операций в отформатированном виде
+git log --pretty=format:"%h %ad | %s%d [%an]" --date=short
+
+# Отправка изменений на удаленный репозиторий
+git push origin report
+```
