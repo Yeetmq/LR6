@@ -61,3 +61,53 @@ git log -p -1
 ```
 ![[Pasted image 20241114223757.png]]
 
+### Шаг 9: Слияние ветки и разрешение конфликта
+Создана и слита ветка feature в master, конфликтов не возникло:
+
+```shell
+git checkout -b feature
+# Внесены изменения
+git add .
+git commit -m "Внес изменения в feature"
+git checkout master
+git merge feature
+```
+![[Pasted image 20241114224339.png]]
+### Шаг 10: Удаление побочной ветки
+
+
+Удалена ветка feature после слияния:
+
+```shell
+git branch -d feature
+```
+
+### Шаг 11: Сделаны несколько коммитов с комментариями
+
+Внесены изменения в файл example.txt (поочерёдно добавил две строки) и сделаны коммиты:
+
+```shell
+git add example.txt
+git commit -m "Добавлена новая строка в файл example.txt"
+git add example.txt
+git commit -m "Добавил ещё одну строку(второй коммит).txt"
+```
+![[Pasted image 20241114224432.png]]
+### Шаг 12: Откат коммита
+Выполнен откат последнего коммита:
+
+```shell
+git add example.txt
+git commit -m "Добавлена новая строка в файл example.txt"
+git add example.txt
+git commit -m "Добавил ещё одну строку(второй коммит).txt"
+```
+![[Pasted image 20241114224459.png]]
+### Шаг 13: Создание ветки для отчета
+
+Создана ветка report для оформления отчета:
+```shell
+git branch report
+git checkout report
+```
+![[Pasted image 20241114224521.png]]
