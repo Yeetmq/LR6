@@ -16,8 +16,9 @@
 
 ### Шаг 2: Форк репозитория
 Форкнут репозиторий с заданием: https://github.com/Yeetmq/LR6/tree/master
+![image](https://github.com/user-attachments/assets/9b68778d-5dcd-49a3-bf50-39c921b06144)
 
-![[Pasted image 20241114223618.png]]
+
 ### Шаг 3: Установка Git
 Установлен Git с сайта [https://git-scm.com/](https://git-scm.com/).
 
@@ -28,14 +29,16 @@
 git config --global user.name "Группа Фамилия И.О."
 git config --global user.email "ваш_емейл@example.com"
 ```
-![[Pasted image 20241114223658.png]]
+![image](https://github.com/user-attachments/assets/ec222698-6b0e-4fe9-ae05-f4fdf58caec7)
+
 
 ### Шаг 5: Клонирование репозитория
 
 ```bash
 git clone https://github.com/Kurtyanik/LR6
 ```
-![[Pasted image 20241114223708.png]]
+![image](https://github.com/user-attachments/assets/dcb9c33c-acca-4157-9157-5092c5ec3a4f)
+
 
 ### Шаг 6: Добавление файла через GitHub и подтягивание изменений
 Добавлен файл через веб-интерфейс GitHub и изменения подтянуты локально:
@@ -43,7 +46,8 @@ git clone https://github.com/Kurtyanik/LR6
 ```bash
 git pull
 ```
-![[Pasted image 20241114223719.png]]
+![image](https://github.com/user-attachments/assets/e2ae9ec6-9ca1-4899-bf94-4acebaaca460)
+
 
 ### Шаг 7: Получение истории операций
 Получена история операций для каждой ветки:
@@ -51,7 +55,8 @@ git pull
 ```bash
 git log --oneline --all
 ```
-![[Pasted image 20241114223743.png]]
+![image](https://github.com/user-attachments/assets/2113c2a1-3aef-47c5-9519-859a665024ab)
+
 
 ### Шаг 8: Просмотр последних изменений
 Посмотрены последние изменения:
@@ -59,7 +64,8 @@ git log --oneline --all
 ```bash
 git log -p -1
 ```
-![[Pasted image 20241114223757.png]]
+![image](https://github.com/user-attachments/assets/3ebec833-017f-4d08-bebd-1d8934d6f135)
+
 
 ### Шаг 9: Слияние ветки и разрешение конфликта
 Создана и слита ветка feature в master, конфликтов не возникло:
@@ -72,7 +78,8 @@ git commit -m "Внес изменения в feature"
 git checkout master
 git merge feature
 ```
-![[Pasted image 20241114224339.png]]
+![image](https://github.com/user-attachments/assets/95d665bb-41a7-4f1c-902d-13506823d7d0)
+
 ### Шаг 10: Удаление побочной ветки
 
 
@@ -92,7 +99,8 @@ git commit -m "Добавлена новая строка в файл example.tx
 git add example.txt
 git commit -m "Добавил ещё одну строку(второй коммит).txt"
 ```
-![[Pasted image 20241114224432.png]]
+![image](https://github.com/user-attachments/assets/90deb616-9bc3-47ce-b3b8-2b08c36050d2)
+
 ### Шаг 12: Откат коммита
 Выполнен откат последнего коммита:
 
@@ -102,7 +110,8 @@ git commit -m "Добавлена новая строка в файл example.tx
 git add example.txt
 git commit -m "Добавил ещё одну строку(второй коммит).txt"
 ```
-![[Pasted image 20241114224459.png]]
+![image](https://github.com/user-attachments/assets/c7190dd4-1ce4-470a-bcdd-ee18503ddcc0)
+
 ### Шаг 13: Создание ветки для отчета
 
 Создана ветка report для оформления отчета:
@@ -110,7 +119,9 @@ git commit -m "Добавил ещё одну строку(второй комм
 git branch report
 git checkout report
 ```
-![[Pasted image 20241114224521.png]]
+![image](https://github.com/user-attachments/assets/4c017792-71b5-40a2-a634-9b88faaadc0b)
+
+
 
 ### Лог команд
 ```# Настройка имени пользователя и email
@@ -175,8 +186,8 @@ git push origin report
 git log --pretty=format:"%h %ad | %s%d [%an]" --date=short
 ```
 
-Результат выполнения программы: [!
-![[Pasted image 20241114225352.png]]
+История операций: ![image](https://github.com/user-attachments/assets/c5bd5613-a7af-4bed-8a62-a285f92c5900)
+
 ## Вывод
 
 В ходе выполнения лабораторной работы были изучены основные возможности системы контроля версий Git. Получены навыки работы с локальными и удаленными репозиториями, создания и слияния веток, разрешения конфликтов и оформления отчета в README.md файле.
